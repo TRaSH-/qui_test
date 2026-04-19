@@ -1,0 +1,68 @@
+{
+  "_slug": "tag-nohl-tier3",
+  "conditions": {
+    "schemaVersion": "1",
+    "tag": {
+      "condition": {
+        "conditions": [
+          {
+            "field": "TAGS",
+            "operator": "EQUAL",
+            "value": "Tier3"
+          },
+          {
+            "field": "TAGS",
+            "operator": "EQUAL",
+            "value": "noHL"
+          },
+          {
+            "field": "COMPLETION_ON",
+            "operator": "GREATER_THAN_OR_EQUAL",
+            "value": "300"
+          }
+        ],
+        "operator": "AND"
+      },
+      "enabled": true,
+      "mode": "full",
+      "tags": [
+        "~Tier3-noHL-21"
+      ]
+    },
+    "tags": [
+      {
+        "condition": {
+          "conditions": [
+            {
+              "field": "TAGS",
+              "operator": "EQUAL",
+              "value": "Tier3"
+            },
+            {
+              "field": "TAGS",
+              "operator": "EQUAL",
+              "value": "noHL"
+            },
+            {
+              "field": "COMPLETION_ON",
+              "operator": "GREATER_THAN_OR_EQUAL",
+              "value": "300"
+            }
+          ],
+          "operator": "AND"
+        },
+        "enabled": true,
+        "mode": "full",
+        "tags": [
+          "~Tier3-noHL-21"
+        ]
+      }
+    ]
+  },
+  "name": "Tag: noHL Tier 3",
+  "sortOrder": 20,
+  "trackerDomains": [
+    "*"
+  ],
+  "trackerPattern": "*"
+}

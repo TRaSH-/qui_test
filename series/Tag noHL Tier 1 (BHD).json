@@ -1,0 +1,88 @@
+{
+  "_slug": "tag-nohl-tier1-bhd",
+  "conditions": {
+    "schemaVersion": "1",
+    "tag": {
+      "condition": {
+        "conditions": [
+          {
+            "field": "TAGS",
+            "operator": "EQUAL",
+            "value": "Tier1"
+          },
+          {
+            "field": "TRACKER",
+            "operator": "EQUAL",
+            "value": "BHD"
+          },
+          {
+            "field": "TAGS",
+            "operator": "EQUAL",
+            "value": "noHL"
+          },
+          {
+            "field": "COMPLETION_ON",
+            "operator": "GREATER_THAN_OR_EQUAL",
+            "value": "300"
+          },
+          {
+            "field": "NUM_COMPLETE",
+            "operator": "GREATER_THAN_OR_EQUAL",
+            "value": "3"
+          }
+        ],
+        "operator": "AND"
+      },
+      "enabled": true,
+      "mode": "full",
+      "tags": [
+        "~Tier1-noHL-90"
+      ]
+    },
+    "tags": [
+      {
+        "condition": {
+          "conditions": [
+            {
+              "field": "TAGS",
+              "operator": "EQUAL",
+              "value": "Tier1"
+            },
+            {
+              "field": "TRACKER",
+              "operator": "EQUAL",
+              "value": "BHD"
+            },
+            {
+              "field": "TAGS",
+              "operator": "EQUAL",
+              "value": "noHL"
+            },
+            {
+              "field": "COMPLETION_ON",
+              "operator": "GREATER_THAN_OR_EQUAL",
+              "value": "300"
+            },
+            {
+              "field": "NUM_COMPLETE",
+              "operator": "GREATER_THAN_OR_EQUAL",
+              "value": "3"
+            }
+          ],
+          "operator": "AND"
+        },
+        "enabled": true,
+        "mode": "full",
+        "tags": [
+          "~Tier1-noHL-90"
+        ]
+      }
+    ]
+  },
+  "name": "Tag: noHL Tier 1  (BHD)",
+  "sortOrder": 13,
+  "trackerDomains": [
+    "*"
+  ],
+  "trackerPattern": "*"
+}

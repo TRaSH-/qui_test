@@ -1,0 +1,78 @@
+{
+  "_slug": "tag-plus-upload-limit-tier3",
+  "conditions": {
+    "schemaVersion": "1",
+    "speedLimits": {
+      "condition": {
+        "conditions": [
+          {
+            "field": "TAGS",
+            "operator": "EQUAL",
+            "value": "Tier3"
+          },
+          {
+            "field": "RATIO",
+            "operator": "GREATER_THAN_OR_EQUAL",
+            "value": "2"
+          }
+        ],
+        "operator": "AND"
+      },
+      "enabled": true,
+      "uploadKiB": 1024
+    },
+    "tag": {
+      "condition": {
+        "conditions": [
+          {
+            "field": "TAGS",
+            "operator": "EQUAL",
+            "value": "Tier3"
+          },
+          {
+            "field": "RATIO",
+            "operator": "GREATER_THAN_OR_EQUAL",
+            "value": "2"
+          }
+        ],
+        "operator": "AND"
+      },
+      "enabled": true,
+      "mode": "full",
+      "tags": [
+        "~1MB/s"
+      ]
+    },
+    "tags": [
+      {
+        "condition": {
+          "conditions": [
+            {
+              "field": "TAGS",
+              "operator": "EQUAL",
+              "value": "Tier3"
+            },
+            {
+              "field": "RATIO",
+              "operator": "GREATER_THAN_OR_EQUAL",
+              "value": "2"
+            }
+          ],
+          "operator": "AND"
+        },
+        "enabled": true,
+        "mode": "full",
+        "tags": [
+          "~1MB/s"
+        ]
+      }
+    ]
+  },
+  "intervalSeconds": 1800,
+  "name": "Tag + Upload Limit: Tier 3",
+  "sortOrder": 23,
+  "trackerDomains": [
+    "*"
+  ],
+  "trackerPattern": "*"
+}

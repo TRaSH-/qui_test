@@ -1,0 +1,52 @@
+{
+  "_slug": "delete-nohl-tier1-bhd",
+  "conditions": {
+    "delete": {
+      "condition": {
+        "conditions": [
+          {
+            "field": "TAGS",
+            "operator": "EQUAL",
+            "value": "Tier1"
+          },
+          {
+            "field": "TRACKER",
+            "operator": "EQUAL",
+            "value": "BHD"
+          },
+          {
+            "field": "TAGS",
+            "operator": "EQUAL",
+            "value": "noHL"
+          },
+          {
+            "field": "COMPLETION_ON",
+            "operator": "GREATER_THAN",
+            "value": "7776000"
+          },
+          {
+            "field": "LAST_ACTIVITY",
+            "operator": "GREATER_THAN_OR_EQUAL",
+            "value": "43200"
+          },
+          {
+            "field": "NUM_COMPLETE",
+            "operator": "GREATER_THAN_OR_EQUAL",
+            "value": "3"
+          }
+        ],
+        "operator": "AND"
+      },
+      "enabled": true,
+      "mode": "deleteWithFilesPreserveCrossSeeds"
+    },
+    "schemaVersion": "1"
+  },
+  "intervalSeconds": 21600,
+  "name": "Delete: noHL Tier 1 (BHD)",
+  "sortOrder": 15,
+  "trackerDomains": [
+    "*"
+  ],
+  "trackerPattern": "*"
+}

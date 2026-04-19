@@ -1,0 +1,58 @@
+{
+  "_slug": "tag-nohl",
+  "conditions": {
+    "schemaVersion": "1",
+    "tag": {
+      "condition": {
+        "conditions": [
+          {
+            "field": "HARDLINK_SCOPE",
+            "operator": "NOT_EQUAL",
+            "value": "outside_qbittorrent"
+          },
+          {
+            "field": "COMPLETION_ON",
+            "operator": "GREATER_THAN_OR_EQUAL",
+            "value": "43200"
+          }
+        ],
+        "operator": "AND"
+      },
+      "enabled": true,
+      "mode": "full",
+      "tags": [
+        "noHL"
+      ]
+    },
+    "tags": [
+      {
+        "condition": {
+          "conditions": [
+            {
+              "field": "HARDLINK_SCOPE",
+              "operator": "NOT_EQUAL",
+              "value": "outside_qbittorrent"
+            },
+            {
+              "field": "COMPLETION_ON",
+              "operator": "GREATER_THAN_OR_EQUAL",
+              "value": "43200"
+            }
+          ],
+          "operator": "AND"
+        },
+        "enabled": true,
+        "mode": "full",
+        "tags": [
+          "noHL"
+        ]
+      }
+    ]
+  },
+  "name": "Tag: noHL",
+  "sortOrder": 4,
+  "trackerDomains": [
+    "*"
+  ],
+  "trackerPattern": "*"
+}

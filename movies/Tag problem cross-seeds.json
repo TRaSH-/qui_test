@@ -1,0 +1,98 @@
+{
+  "_slug": "tag-problem-cross-seeds",
+  "conditions": {
+    "schemaVersion": "1",
+    "tag": {
+      "condition": {
+        "conditions": [
+          {
+            "field": "CATEGORY",
+            "operator": "EQUAL",
+            "value": "cross-seed"
+          },
+          {
+            "field": "STATE",
+            "operator": "NOT_EQUAL",
+            "value": "tracker_down"
+          },
+          {
+            "field": "ADDED_ON",
+            "operator": "GREATER_THAN_OR_EQUAL",
+            "value": "3600"
+          },
+          {
+            "conditions": [
+              {
+                "field": "STATE",
+                "operator": "EQUAL",
+                "value": "missingFiles"
+              },
+              {
+                "field": "STATE",
+                "operator": "EQUAL",
+                "value": "stalled_downloading"
+              }
+            ],
+            "operator": "OR"
+          }
+        ],
+        "operator": "AND"
+      },
+      "enabled": true,
+      "mode": "full",
+      "tags": [
+        "~problem_cross-seeds"
+      ]
+    },
+    "tags": [
+      {
+        "condition": {
+          "conditions": [
+            {
+              "field": "CATEGORY",
+              "operator": "EQUAL",
+              "value": "cross-seed"
+            },
+            {
+              "field": "STATE",
+              "operator": "NOT_EQUAL",
+              "value": "tracker_down"
+            },
+            {
+              "field": "ADDED_ON",
+              "operator": "GREATER_THAN_OR_EQUAL",
+              "value": "3600"
+            },
+            {
+              "conditions": [
+                {
+                  "field": "STATE",
+                  "operator": "EQUAL",
+                  "value": "missingFiles"
+                },
+                {
+                  "field": "STATE",
+                  "operator": "EQUAL",
+                  "value": "stalled_downloading"
+                }
+              ],
+              "operator": "OR"
+            }
+          ],
+          "operator": "AND"
+        },
+        "enabled": true,
+        "mode": "full",
+        "tags": [
+          "~problem_cross-seeds"
+        ]
+      }
+    ]
+  },
+  "name": "Tag: problem cross-seeds",
+  "sortOrder": 12,
+  "trackerDomains": [
+    "*"
+  ],
+  "trackerPattern": "*"
+}
