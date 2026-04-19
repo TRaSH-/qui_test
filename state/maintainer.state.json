@@ -23,6 +23,11 @@
           "last_name": "Tag: Min Seeds Not Met",
           "category": "series"
         },
+        "119": {
+          "slug": "tag-single-episodes",
+          "last_name": "Tag: Single Episodes",
+          "category": "series"
+        },
         "122": {
           "slug": "tag-problem-cross-seeds",
           "last_name": "Tag: problem cross-seeds",
@@ -233,7 +238,6 @@
   "excluded_rules": {
     "3": {
       "113": true,
-      "119": true,
       "81": true
     }
   }

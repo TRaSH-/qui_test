@@ -4,6 +4,13 @@ All notable changes to this automations repository are documented here. This fil
 
 ## 2026-04-19
 
+This rule can be used to tag your existing Episodes for other rule sets.
+
+### Added
+- `tag-single-episodes` (series) — Tag: Single Episodes
+
+## 2026-04-19
+
 Initial Export
 
 ### Added

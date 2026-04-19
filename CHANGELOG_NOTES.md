@@ -1,3 +1,3 @@
 ## 2026-04-19
 
-Initial Export
+This rule can be used to tag your existing Episodes for other rule sets.
