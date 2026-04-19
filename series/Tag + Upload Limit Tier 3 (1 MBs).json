@@ -1,9 +1,17 @@
 {
   "_slug": "tag-plus-upload-limit-tier3-1-mb-s",
+  "name": "Tag + Upload Limit: Tier 3 (1 MB/s)",
+  "trackerPattern": "*",
+  "trackerDomains": [
+    "*"
+  ],
   "conditions": {
     "schemaVersion": "1",
     "speedLimits": {
+      "enabled": true,
+      "uploadKiB": 1024,
       "condition": {
+        "operator": "AND",
         "conditions": [
           {
             "field": "TAGS",
@@ -15,14 +23,17 @@
             "operator": "GREATER_THAN_OR_EQUAL",
             "value": "2"
           }
-        ],
-        "operator": "AND"
-      },
-      "enabled": true,
-      "uploadKiB": 1024
+        ]
+      }
     },
     "tag": {
+      "enabled": true,
+      "tags": [
+        "~1MB/s"
+      ],
+      "mode": "full",
       "condition": {
+        "operator": "AND",
         "conditions": [
           {
             "field": "TAGS",
@@ -34,18 +45,18 @@
             "operator": "GREATER_THAN_OR_EQUAL",
             "value": "2"
           }
-        ],
-        "operator": "AND"
-      },
-      "enabled": true,
-      "mode": "full",
-      "tags": [
-        "~1MB/s"
-      ]
+        ]
+      }
     },
     "tags": [
       {
+        "enabled": true,
+        "tags": [
+          "~1MB/s"
+        ],
+        "mode": "full",
         "condition": {
+          "operator": "AND",
           "conditions": [
             {
               "field": "TAGS",
@@ -57,22 +68,11 @@
               "operator": "GREATER_THAN_OR_EQUAL",
               "value": "2"
             }
-          ],
-          "operator": "AND"
-        },
-        "enabled": true,
-        "mode": "full",
-        "tags": [
-          "~1MB/s"
-        ]
+          ]
+        }
       }
     ]
   },
   "intervalSeconds": 1800,
-  "name": "Tag + Upload Limit: Tier 3 (1 MB/s)",
-  "sortOrder": 22,
-  "trackerDomains": [
-    "*"
-  ],
-  "trackerPattern": "*"
+  "sortOrder": 22
 }

@@ -1,9 +1,20 @@
 {
   "_slug": "tag-nohl-tier2",
+  "name": "Tag: noHL Tier 2",
+  "trackerPattern": "*",
+  "trackerDomains": [
+    "*"
+  ],
   "conditions": {
     "schemaVersion": "1",
     "tag": {
+      "enabled": true,
+      "tags": [
+        "~Tier2-noHL-21"
+      ],
+      "mode": "full",
       "condition": {
+        "operator": "AND",
         "conditions": [
           {
             "field": "TAGS",
@@ -20,18 +31,18 @@
             "operator": "GREATER_THAN_OR_EQUAL",
             "value": "300"
           }
-        ],
-        "operator": "AND"
-      },
-      "enabled": true,
-      "mode": "full",
-      "tags": [
-        "~Tier2-noHL-21"
-      ]
+        ]
+      }
     },
     "tags": [
       {
+        "enabled": true,
+        "tags": [
+          "~Tier2-noHL-21"
+        ],
+        "mode": "full",
         "condition": {
+          "operator": "AND",
           "conditions": [
             {
               "field": "TAGS",
@@ -48,21 +59,10 @@
               "operator": "GREATER_THAN_OR_EQUAL",
               "value": "300"
             }
-          ],
-          "operator": "AND"
-        },
-        "enabled": true,
-        "mode": "full",
-        "tags": [
-          "~Tier2-noHL-21"
-        ]
+          ]
+        }
       }
     ]
   },
-  "name": "Tag: noHL Tier 2",
-  "sortOrder": 18,
-  "trackerDomains": [
-    "*"
-  ],
-  "trackerPattern": "*"
+  "sortOrder": 18
 }

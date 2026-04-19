@@ -4,6 +4,56 @@ All notable changes to this automations repository are documented here. This fil
 
 ## 2026-04-19
 
+Initial Export
+
+### Added
+- `tag-tier1` (movies) — Tag: Tier 1
+- `tag-tier2` (movies) — Tag: Tier 2
+- `tag-tier3` (movies) — Tag: Tier 3
+- `tag-nohl` (movies) — Tag: noHL
+- `tag-min-seeds-not-met` (movies) — Tag: Min Seeds Not Met
+- `resume-if-torrent-gets-completed-for-no-reason` (movies) — Resume: If torrent gets Completed for no reason
+- `force-recheck-stopped-cross-seeds-90pct` (movies) — Force recheck: stopped cross-seeds (< 90%)
+- `resume-stopped-cross-seeds-90pct` (movies) — Resume: stopped cross-seeds (>90%)
+- `delete-stalled-downloads` (movies) — Delete: stalled downloads
+- `delete-unregistered-torrents` (movies) — Delete: unregistered torrents
+- `tag-problem-cross-seeds` (movies) — Tag: problem cross-seeds
+- `delete-problem-cross-seeds` (movies) — Delete: problem cross-seeds
+- `tag-nohl-tier1-bhd` (movies) — Tag: noHL Tier 1 (BHD)
+- `delete-nohl-tier1-bhd` (movies) — Delete: noHL Tier 1 (BHD)
+- `tag-nohl-tier1` (movies) — Tag: noHL Tier 1
+- `delete-nohl-tier1` (movies) — Delete: noHL Tier 1
+- `tag-nohl-tier2` (movies) — Tag: noHL Tier 2
+- `delete-nohl-tier2` (movies) — Delete: noHL Tier 2
+- `tag-nohl-tier3` (movies) — Tag: noHL Tier 3
+- `delete-nohl-tier3` (movies) — Delete: noHL Tier 3
+- `tag-plus-upload-limit-tier2` (movies) — Tag + Upload Limit: Tier 2
+- `tag-plus-upload-limit-tier3` (movies) — Tag + Upload Limit: Tier 3
+- `tag-tier1` (series) — Tag: Tier 1
+- `tag-tier2` (series) — Tag: Tier 2
+- `tag-tier3` (series) — Tag: Tier 3
+- `tag-nohl` (series) — Tag: noHL
+- `tag-min-seeds-not-met` (series) — Tag: Min Seeds Not Met
+- `resume-if-torrent-gets-completed-for-no-reason` (series) — Resume: If torrent gets Completed for no reason
+- `force-recheck-stopped-cross-seeds-90pct` (series) — Force recheck: stopped cross-seeds (< 90%)
+- `resume-stopped-cross-seeds-90pct` (series) — Resume: stopped cross-seeds (>90%)
+- `delete-stalled-downloads` (series) — Delete: stalled downloads
+- `delete-unregistered-torrents` (series) — Delete: unregistered torrents
+- `tag-problem-cross-seeds` (series) — Tag: problem cross-seeds
+- `delete-problem-cross-seeds` (series) — Delete: problem cross-seeds
+- `tag-nohl-tier1-bhd` (series) — Tag: noHL Tier 1  (BHD)
+- `delete-nohl-tier1-bhd` (series) — Delete: noHL Tier 1 (BHD)
+- `tag-nohl-tier1` (series) — Tag: noHL Tier 1
+- `delete-nohl-tier1` (series) — Delete: noHL Tier 1
+- `tag-nohl-tier2` (series) — Tag: noHL Tier 2
+- `delete-nohl-tier2` (series) — Delete: noHL Tier 2
+- `tag-nohl-tier3` (series) — Tag: noHL Tier 3
+- `delete-nohl-tier3` (series) — Delete: noHL Tier 3
+- `tag-plus-upload-limit-tier2-2-mb-s` (series) — Tag + Upload Limit: Tier 2 (2 MB/s)
+- `tag-plus-upload-limit-tier3-1-mb-s` (series) — Tag + Upload Limit: Tier 3 (1 MB/s)
+
+## 2026-04-19
+
 ### Added
 - `tag-tier1` (movies) — Tag: Tier 1
 - `tag-tier2` (movies) — Tag: Tier 2

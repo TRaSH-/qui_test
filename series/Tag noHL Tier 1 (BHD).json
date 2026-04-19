@@ -1,9 +1,20 @@
 {
   "_slug": "tag-nohl-tier1-bhd",
+  "name": "Tag: noHL Tier 1  (BHD)",
+  "trackerPattern": "*",
+  "trackerDomains": [
+    "*"
+  ],
   "conditions": {
     "schemaVersion": "1",
     "tag": {
+      "enabled": true,
+      "tags": [
+        "~Tier1-noHL-90"
+      ],
+      "mode": "full",
       "condition": {
+        "operator": "AND",
         "conditions": [
           {
             "field": "TAGS",
@@ -30,18 +41,18 @@
             "operator": "GREATER_THAN_OR_EQUAL",
             "value": "3"
           }
-        ],
-        "operator": "AND"
-      },
-      "enabled": true,
-      "mode": "full",
-      "tags": [
-        "~Tier1-noHL-90"
-      ]
+        ]
+      }
     },
     "tags": [
       {
+        "enabled": true,
+        "tags": [
+          "~Tier1-noHL-90"
+        ],
+        "mode": "full",
         "condition": {
+          "operator": "AND",
           "conditions": [
             {
               "field": "TAGS",
@@ -68,21 +79,10 @@
               "operator": "GREATER_THAN_OR_EQUAL",
               "value": "3"
             }
-          ],
-          "operator": "AND"
-        },
-        "enabled": true,
-        "mode": "full",
-        "tags": [
-          "~Tier1-noHL-90"
-        ]
+          ]
+        }
       }
     ]
   },
-  "name": "Tag: noHL Tier 1  (BHD)",
-  "sortOrder": 13,
-  "trackerDomains": [
-    "*"
-  ],
-  "trackerPattern": "*"
+  "sortOrder": 13
 }

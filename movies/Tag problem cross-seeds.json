@@ -1,9 +1,20 @@
 {
   "_slug": "tag-problem-cross-seeds",
+  "name": "Tag: problem cross-seeds",
+  "trackerPattern": "*",
+  "trackerDomains": [
+    "*"
+  ],
   "conditions": {
     "schemaVersion": "1",
     "tag": {
+      "enabled": true,
+      "tags": [
+        "~problem_cross-seeds"
+      ],
+      "mode": "full",
       "condition": {
+        "operator": "AND",
         "conditions": [
           {
             "field": "CATEGORY",
@@ -21,6 +32,7 @@
             "value": "3600"
           },
           {
+            "operator": "OR",
             "conditions": [
               {
                 "field": "STATE",
@@ -32,21 +44,20 @@
                 "operator": "EQUAL",
                 "value": "stalled_downloading"
               }
-            ],
-            "operator": "OR"
+            ]
           }
-        ],
-        "operator": "AND"
-      },
-      "enabled": true,
-      "mode": "full",
-      "tags": [
-        "~problem_cross-seeds"
-      ]
+        ]
+      }
     },
     "tags": [
       {
+        "enabled": true,
+        "tags": [
+          "~problem_cross-seeds"
+        ],
+        "mode": "full",
         "condition": {
+          "operator": "AND",
           "conditions": [
             {
               "field": "CATEGORY",
@@ -64,6 +75,7 @@
               "value": "3600"
             },
             {
+              "operator": "OR",
               "conditions": [
                 {
                   "field": "STATE",
@@ -75,24 +87,12 @@
                   "operator": "EQUAL",
                   "value": "stalled_downloading"
                 }
-              ],
-              "operator": "OR"
+              ]
             }
-          ],
-          "operator": "AND"
-        },
-        "enabled": true,
-        "mode": "full",
-        "tags": [
-          "~problem_cross-seeds"
-        ]
+          ]
+        }
       }
     ]
   },
-  "name": "Tag: problem cross-seeds",
-  "sortOrder": 12,
-  "trackerDomains": [
-    "*"
-  ],
-  "trackerPattern": "*"
+  "sortOrder": 12
 }

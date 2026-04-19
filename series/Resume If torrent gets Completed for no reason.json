@@ -1,10 +1,19 @@
 {
   "_slug": "resume-if-torrent-gets-completed-for-no-reason",
+  "name": "Resume: If torrent gets Completed for no reason",
+  "trackerPattern": "*",
+  "trackerDomains": [
+    "*"
+  ],
   "conditions": {
+    "schemaVersion": "1",
     "resume": {
+      "enabled": true,
       "condition": {
+        "operator": "AND",
         "conditions": [
           {
+            "operator": "OR",
             "conditions": [
               {
                 "field": "STATE",
@@ -16,8 +25,7 @@
                 "operator": "EQUAL",
                 "value": "stopped"
               }
-            ],
-            "operator": "OR"
+            ]
           },
           {
             "field": "TAGS",
@@ -29,17 +37,9 @@
             "operator": "EQUAL",
             "value": "1"
           }
-        ],
-        "operator": "AND"
-      },
-      "enabled": true
-    },
-    "schemaVersion": "1"
+        ]
+      }
+    }
   },
-  "name": "Resume: If torrent gets Completed for no reason",
-  "sortOrder": 6,
-  "trackerDomains": [
-    "*"
-  ],
-  "trackerPattern": "*"
+  "sortOrder": 6
 }

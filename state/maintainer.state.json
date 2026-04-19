@@ -18,19 +18,9 @@
           "last_name": "Resume: If torrent gets Completed for no reason",
           "category": "series"
         },
-        "113": {
-          "slug": "delete-seed-goals-met-copy",
-          "last_name": "Delete: seed goals met (copy)",
-          "category": "series"
-        },
         "118": {
           "slug": "tag-min-seeds-not-met",
           "last_name": "Tag: Min Seeds Not Met",
-          "category": "series"
-        },
-        "119": {
-          "slug": "tag-single-episodes",
-          "last_name": "Tag: Single Episodes",
           "category": "series"
         },
         "122": {
@@ -111,11 +101,6 @@
         "76": {
           "slug": "tag-plus-upload-limit-tier3-1-mb-s",
           "last_name": "Tag + Upload Limit: Tier 3 (1 MB/s)",
-          "category": "series"
-        },
-        "81": {
-          "slug": "tag-season-pack",
-          "last_name": "Tag: Season Pack",
           "category": "series"
         },
         "85": {
@@ -243,6 +228,13 @@
           "category": "movies"
         }
       }
+    }
+  },
+  "excluded_rules": {
+    "3": {
+      "113": true,
+      "119": true,
+      "81": true
     }
   }
 }

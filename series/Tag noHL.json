@@ -1,9 +1,20 @@
 {
   "_slug": "tag-nohl",
+  "name": "Tag: noHL",
+  "trackerPattern": "*",
+  "trackerDomains": [
+    "*"
+  ],
   "conditions": {
     "schemaVersion": "1",
     "tag": {
+      "enabled": true,
+      "tags": [
+        "noHL"
+      ],
+      "mode": "full",
       "condition": {
+        "operator": "AND",
         "conditions": [
           {
             "field": "HARDLINK_SCOPE",
@@ -15,18 +26,18 @@
             "operator": "GREATER_THAN_OR_EQUAL",
             "value": "43200"
           }
-        ],
-        "operator": "AND"
-      },
-      "enabled": true,
-      "mode": "full",
-      "tags": [
-        "noHL"
-      ]
+        ]
+      }
     },
     "tags": [
       {
+        "enabled": true,
+        "tags": [
+          "noHL"
+        ],
+        "mode": "full",
         "condition": {
+          "operator": "AND",
           "conditions": [
             {
               "field": "HARDLINK_SCOPE",
@@ -38,21 +49,10 @@
               "operator": "GREATER_THAN_OR_EQUAL",
               "value": "43200"
             }
-          ],
-          "operator": "AND"
-        },
-        "enabled": true,
-        "mode": "full",
-        "tags": [
-          "noHL"
-        ]
+          ]
+        }
       }
     ]
   },
-  "name": "Tag: noHL",
-  "sortOrder": 4,
-  "trackerDomains": [
-    "*"
-  ],
-  "trackerPattern": "*"
+  "sortOrder": 4
 }

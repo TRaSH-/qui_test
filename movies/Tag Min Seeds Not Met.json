@@ -1,23 +1,36 @@
 {
   "_slug": "tag-min-seeds-not-met",
+  "name": "Tag: Min Seeds Not Met",
+  "trackerPattern": "*",
+  "trackerDomains": [
+    "*"
+  ],
   "conditions": {
     "schemaVersion": "1",
     "tag": {
+      "enabled": true,
+      "tags": [
+        "~MinSeedsNotMet"
+      ],
+      "mode": "full",
       "condition": {
+        "operator": "AND",
         "conditions": [
           {
+            "operator": "OR",
             "conditions": [
               {
+                "operator": "AND",
                 "conditions": [
                   {
                     "field": "NUM_COMPLETE",
                     "operator": "LESS_THAN_OR_EQUAL",
                     "value": "3"
                   }
-                ],
-                "operator": "AND"
+                ]
               },
               {
+                "operator": "AND",
                 "conditions": [
                   {
                     "field": "NUM_INCOMPLETE",
@@ -29,43 +42,43 @@
                     "operator": "EQUAL",
                     "value": "HDB"
                   }
-                ],
-                "operator": "AND"
+                ]
               }
-            ],
-            "operator": "OR"
+            ]
           },
           {
             "field": "TAGS",
             "operator": "EQUAL",
             "value": "noHL"
           }
-        ],
-        "operator": "AND"
-      },
-      "enabled": true,
-      "mode": "full",
-      "tags": [
-        "~MinSeedsNotMet"
-      ]
+        ]
+      }
     },
     "tags": [
       {
+        "enabled": true,
+        "tags": [
+          "~MinSeedsNotMet"
+        ],
+        "mode": "full",
         "condition": {
+          "operator": "AND",
           "conditions": [
             {
+              "operator": "OR",
               "conditions": [
                 {
+                  "operator": "AND",
                   "conditions": [
                     {
                       "field": "NUM_COMPLETE",
                       "operator": "LESS_THAN_OR_EQUAL",
                       "value": "3"
                     }
-                  ],
-                  "operator": "AND"
+                  ]
                 },
                 {
+                  "operator": "AND",
                   "conditions": [
                     {
                       "field": "NUM_INCOMPLETE",
@@ -77,33 +90,20 @@
                       "operator": "EQUAL",
                       "value": "HDB"
                     }
-                  ],
-                  "operator": "AND"
+                  ]
                 }
-              ],
-              "operator": "OR"
+              ]
             },
             {
               "field": "TAGS",
               "operator": "EQUAL",
               "value": "noHL"
             }
-          ],
-          "operator": "AND"
-        },
-        "enabled": true,
-        "mode": "full",
-        "tags": [
-          "~MinSeedsNotMet"
-        ]
+          ]
+        }
       }
     ]
   },
   "intervalSeconds": 3600,
-  "name": "Tag: Min Seeds Not Met",
-  "sortOrder": 5,
-  "trackerDomains": [
-    "*"
-  ],
-  "trackerPattern": "*"
+  "sortOrder": 5
 }
